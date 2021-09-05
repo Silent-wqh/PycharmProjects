@@ -1,0 +1,19 @@
+{% extends 'pies/base.html' %}
+
+{% block content %}
+
+  <p>Pie: {{ pie }}</p>
+
+  <p>Toppings:</p>
+  <ul>
+  {% for topping in toppings %}
+    <li>
+      <p>{{ topping.date_added|date:'M d, Y H:i' }}</p>
+      <p>{{ topping.name|linebreaks }}</p>
+    </li>
+  {% empty %}
+    <li>There no toppings.</li>
+  {% endfor %}
+  </ul>
+
+{% endblock content %}

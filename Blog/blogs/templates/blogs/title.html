@@ -1,0 +1,19 @@
+{% extends 'blogs/base.html' %}
+
+{% block content %}
+
+  <p>题目：</p>
+  <ul>
+    {% for blog in blogs %}
+      <li>
+        <p>{{ blog.date_added|x date:'M d, Y H:i' }}</p>
+        <p>{{ blog }}</p>
+      </li>
+      <a href="{% url 'blogs:edit_blog' blog.id %}">编辑主题</a>
+    {% empty %}
+      <li>没有主题</li>
+    {% endfor %}
+  </ul>
+  <a href="{% url 'blogs:new_blog' %}">添加新主题</a>
+
+{% endblock content %}

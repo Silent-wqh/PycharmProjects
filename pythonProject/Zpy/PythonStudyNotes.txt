@@ -1,0 +1,6 @@
+In Python you can 把它当作计算器。\n
+In Python you can 读取文本，虽然现在学的内容还无法实际应用。
+In Python you can 爬取网页信息，快速获取数据。
+In Python you can 实现自动化，解放机器劳动，释放创造力。
+In Python you can 进行数据分析，获取有价值的信息。
+In Python you can 几乎是所有你想做的，当然，Python也需要其它东西的帮助。
